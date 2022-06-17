@@ -1,0 +1,171 @@
+body {
+    background-color: beige;
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+.logo{
+    width:100%;
+    padding: 0;
+    background-color: #103fa7;
+    display: inline-block;
+}
+
+.navegador {
+    float: right;
+    text-align: right;
+    background-color:#103fa7 ;
+    margin: 0;
+}
+
+.navegador ul {
+    list-style: none;
+    padding: 0;
+    margin: 30px;
+}
+.navegador ul li {
+    display: inline;
+}
+.navegador ul li a {
+    text-transform: uppercase;
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+    margin: 0;
+    padding: 20px;
+}
+.navegador ul li a:hover {
+    color:#fda800;
+}
+
+h1 , .grid-detalhes{
+    text-align: center;
+    padding: 10px;
+    font-family: Arial;
+}
+
+.grid-lancamento {
+   display: grid;
+   grid-template-columns: repeat(4,25%);
+
+}
+.grid-lancamento .coluna {
+    border: 1px solid #ccc;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 20px #ccc;
+    
+}
+.grid-lancamento .imagem{
+    width: 100%;
+    border-radius: 10px  10px 0 0;
+}
+
+.grid-lancamento p {
+    font-size: 18px;
+    height: 40px;
+    margin: 10px;
+}
+
+
+.banner {
+    width: 100%;
+}
+
+main {
+    width: 90%;
+    margin: auto;
+}
+
+.bnt {
+    background-color: #103fa7;
+    color:#fda800;
+    padding: 5px 30px;
+    text-decoration: none;
+    border-radius: 100px;
+    display: inline-block;
+    margin: 20px;
+
+}
+footer {
+    background-color: #103fa7;
+    padding: 10px;
+    color: white;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    color: #103fa7;
+    background-color: #fda800;
+    border-radius: 100%;
+    margin: 10px;
+}
+.center {
+    text-align: center;
+}
+
+.grid-lancamento{
+    grid-template-columns: 100%;
+}
+
+h1 ,.grid-cartaz {
+    text-align: center;
+    padding: 10px;
+    font-family: Arial;
+}
+
+.grid-cartaz {
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+}
+
+.grid-cartaz .filme-cartaz {
+    border: 1px solid #ccc;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 20px #ccc;
+}
+
+.grid-cartaz .imagem {
+    width: 100%;
+    border-radius: 10px  10px 0 0;
+}
+
+.grid-cartaz p {
+    font-size: 18px;
+    height: 40px;
+    margin: 10px;
+}
+
+.block {
+    display: block;
+}
+
+@media (max-whitd: 420px) {
+    header .img {
+      width: 250px;
+    }
+    header .menu, .mobile {
+        display: block;
+    }
+    header nav ,.desktop{
+        display: block;
+        width: 100%;
+    }
+    header nav ul li {
+        width: 100%;
+    }
+    main {
+        width: 100%;
+    }
+
+    .grid-lançamento,.grid-detalhes {
+         grid-template-columns: 100%;
+        }
+  }
